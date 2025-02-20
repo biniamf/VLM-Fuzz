@@ -1,0 +1,1124 @@
+[
+    {
+        "action": "android.accounts.ACTION_ACCOUNT_REMOVED",
+        "adb": [
+            "adb shell am broadcast -a android.accounts.ACTION_ACCOUNT_REMOVED --es android.accounts.Account.name \"example@example.com\" --es android.accounts.Account.type \"com.example.account\""
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.ACL_CONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.ACL_CONNECTED --es android.bluetooth.device.extra.DEVICE \"00:11:22:33:44:55\""
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED --es android.bluetooth.device.extra.DEVICE \"00:11:22:33:44:55\""
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.ACL_DISCONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.ACL_DISCONNECTED --es android.bluetooth.device.extra.DEVICE \"00:11:22:33:44:55\""
+        ]
+    },
+    {
+        "action": "android.bluetooth.adapter.action.STATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.adapter.action.STATE_CHANGED --ez android.bluetooth.adapter.extra.STATE 12 --ez android.bluetooth.adapter.extra.PREVIOUS_STATE 11"
+        ]
+    },
+    {
+        "action": "android.intent.action.AIRPLANE_MODE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.AIRPLANE_MODE --ez android.intent.extra.STATE true"
+        ]
+    },
+    {
+        "action": "android.intent.action.ALIAS_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.ALIAS_CHANGED --es android.intent.extra.ALIAS \"example_alias\" --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.APP_BLOCK_STATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.APP_BLOCK_STATE_CHANGED --es android.intent.extra.PACKAGE_NAME \"com.example.app\" --ez android.intent.extra.BLOCKED true"
+        ]
+    },
+    {
+        "action": "android.intent.action.APPLICATION_DELEGATION_SCOPES_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.APPLICATION_DELEGATION_SCOPES_CHANGED --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.APPLICATION_RESTRICTIONS_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.APPLICATION_RESTRICTIONS_CHANGED --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.appwidget.action.APPWIDGET_DELETED",
+        "adb": [
+            "adb shell am broadcast -a android.appwidget.action.APPWIDGET_DELETED --es android.appwidget.extra.HOST_ID 123 --es android.appwidget.extra.APPWIDGET_ID 456"
+        ]
+    },
+    {
+        "action": "android.appwidget.action.APPWIDGET_DISABLED",
+        "adb": [
+            "adb shell am broadcast -a android.appwidget.action.APPWIDGET_DISABLED --es android.appwidget.extra.HOST_ID 123 --es android.appwidget.extra.APPWIDGET_ID 456"
+        ]
+    },
+    {
+        "action": "android.appwidget.action.APPWIDGET_ENABLED",
+        "adb": [
+            "adb shell am broadcast -a android.appwidget.action.APPWIDGET_ENABLED --es android.appwidget.extra.HOST_ID 123 --es android.appwidget.extra.APPWIDGET_ID 456"
+        ]
+    },
+    {
+        "action": "android.appwidget.action.APPWIDGET_HOST_RESTORED",
+        "adb": [
+            "adb shell am broadcast -a android.appwidget.action.APPWIDGET_HOST_RESTORED --es android.appwidget.extra.HOST_ID 123"
+        ]
+    },
+    {
+        "action": "android.appwidget.action.APPWIDGET_OPTIONS_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.appwidget.action.APPWIDGET_OPTIONS_CHANGED --es android.appwidget.extra.HOST_ID 123 --es android.appwidget.extra.APPWIDGET_ID 456"
+        ]
+    },
+    {
+        "action": "android.appwidget.action.APPWIDGET_RESTORED",
+        "adb": [
+            "adb shell am broadcast -a android.appwidget.action.APPWIDGET_RESTORED --es android.appwidget.extra.HOST_ID 123 --es android.appwidget.extra.APPWIDGET_ID 456"
+        ]
+    },
+    {
+        "action": "android.appwidget.action.APPWIDGET_UPDATE",
+        "adb": [
+            "adb shell am broadcast -a android.appwidget.action.APPWIDGET_UPDATE --es android.appwidget.extra.HOST_ID 123 --es android.appwidget.extra.APPWIDGET_ID 456"
+        ]
+    },
+    {
+        "action": "android.media.AUDIO_BECOMING_NOISY",
+        "adb": [
+            "adb shell am broadcast -a android.media.AUDIO_BECOMING_NOISY"
+        ]
+    },
+    {
+        "action": "android.media.AUDIO_STATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.media.AUDIO_STATE_CHANGED --ez android.media.extra.AUDIO_STATE 1"
+        ]
+    },
+    {
+        "action": "android.accounts.AccountAuthenticator",
+        "adb": [
+            "adb shell am broadcast -a android.accounts.AccountAuthenticator --es android.accounts.AccountAuthenticator \"com.example.auth\""
+        ]
+    },
+    {
+        "action": "android.app.action.AUTOMATIC_ZEN_RULE",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.AUTOMATIC_ZEN_RULE --es android.app.extra.AUTOMATIC_ZEN_RULE_ID \"rule_id\" --es android.app.extra.AUTOMATIC_ZEN_RULE_ENABLED true"
+        ]
+    },
+    {
+        "action": "android.app.action.AUTOMATIC_ZEN_RULE_STATUS_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.AUTOMATIC_ZEN_RULE_STATUS_CHANGED --es android.app.extra.AUTOMATIC_ZEN_RULE_ID \"rule_id\" --ez android.app.extra.AUTOMATIC_ZEN_RULE_ENABLED true"
+        ]
+    },
+    {
+        "action": "android.intent.action.BATTERY_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.BATTERY_CHANGED --ez android.intent.extra.STATUS 3 --ei android.intent.extra.LEVEL 80 --ei android.intent.extra.SCALE 100"
+        ]
+    },
+    {
+        "action": "android.intent.action.BATTERY_LOW",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.BATTERY_LOW"
+        ]
+    },
+    {
+        "action": "android.intent.action.BATTERY_OKAY",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.BATTERY_OKAY"
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.BOND_STATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.BOND_STATE_CHANGED --es android.bluetooth.device.extra.DEVICE \"00:11:22:33:44:55\" --ei android.bluetooth.device.extra.BOND_STATE 12"
+        ]
+    },
+    {
+        "action": "android.intent.action.BOOT_COMPLETED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.BOOT_COMPLETED"
+        ]
+    },
+    {
+        "action": "android.intent.action.CAMERA_BUTTON",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.CAMERA_BUTTON --ez android.intent.extra.CAMERA_FACING 1"
+        ]
+    },
+    {
+        "action": "android.intent.action.CARRIER_CONFIG_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.CARRIER_CONFIG_CHANGED"
+        ]
+    },
+    {
+        "action": "android.os.action.CHARGING",
+        "adb": [
+            "adb shell am broadcast -a android.os.action.CHARGING --ez android.os.extra.CHARGING true"
+        ]
+    },
+    {
+        "action": "android.app.action.CHOOSE_PRIVATE_KEY_ALIAS",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.CHOOSE_PRIVATE_KEY_ALIAS --es android.app.extra.UID \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.CLASS_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.CLASS_CHANGED --es android.intent.extra.INTENT_CATEGORY \"com.example.category\""
+        ]
+    },
+    {
+        "action": "android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION",
+        "adb": [
+            "adb shell am broadcast -a android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION --es android.media.extra.AUDIO_SESSION 123"
+        ]
+    },
+    {
+        "action": "android.intent.action.CLOSE_SYSTEM_DIALOGS",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.CLOSE_SYSTEM_DIALOGS"
+        ]
+    },
+    {
+        "action": "android.intent.action.CONFIGURATION_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.CONFIGURATION_CHANGED"
+        ]
+    },
+    {
+        "action": "android.net.conn.CONNECTIVITY_CHANGE",
+        "adb": [
+            "adb shell am broadcast -a android.net.conn.CONNECTIVITY_CHANGE --ez android.net.conn.CONNECTIVITY_CHANGE_SAMEEN true"
+        ]
+    },
+    {
+        "action": "android.intent.action.DATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.DATE_CHANGED --el android.intent.extra.TIME 1680292800000"
+        ]
+    },
+    {
+        "action": "android.telecom.action.DEFAULT_CALL_SCREENING_APP_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.telecom.action.DEFAULT_CALL_SCREENING_APP_CHANGED --es android.telecom.extra.SCREENING_APP_COMPONENT \"com.example.app/com.example.app.CallScreeningService\""
+        ]
+    },
+    {
+        "action": "android.intent.action.DEFAULT_DIALER_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.DEFAULT_DIALER_CHANGED --es android.intent.extra.PACKAGE_NAME \"com.example.dialer\""
+        ]
+    },
+    {
+        "action": "android.provider.Telephony.DEFAULT_SMS_PACKAGE_CHANGED_ACTION",
+        "adb": [
+            "adb shell am broadcast -a android.provider.Telephony.DEFAULT_SMS_PACKAGE_CHANGED_ACTION --es android.provider.Telephony.EXTRA_PACKAGE_NAME \"com.example.sms\""
+        ]
+    },
+    {
+        "action": "android.provider.Telephony.DEFAULT_SMS_SUBSCRIPTION_CHANGED_ACTION",
+        "adb": [
+            "adb shell am broadcast -a android.provider.Telephony.DEFAULT_SMS_SUBSCRIPTION_CHANGED_ACTION --ei android.provider.Telephony.EXTRA_SUBSCRIPTION_ID 1"
+        ]
+    },
+    {
+        "action": "android.telephony.action.DEFAULT_SUBSCRIPTION_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.telephony.action.DEFAULT_SUBSCRIPTION_CHANGED --ei android.telephony.extra.SUBSCRIPTION_ID 1"
+        ]
+    },
+    {
+        "action": "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED --es android.app.extra.DEVICE_ADMIN \"com.example.admin\""
+        ]
+    },
+    {
+        "action": "android.app.action.DEVICE_ADMIN_DISABLED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.DEVICE_ADMIN_DISABLED --es android.app.extra.DEVICE_ADMIN \"com.example.admin\""
+        ]
+    },
+    {
+        "action": "android.app.action.DEVICE_ADMIN_ENABLED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.DEVICE_ADMIN_ENABLED --es android.app.extra.DEVICE_ADMIN \"com.example.admin\""
+        ]
+    },
+    {
+        "action": "android.os.action.DEVICE_IDLE_MODE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.os.action.DEVICE_IDLE_MODE_CHANGED --ez android.os.extra.DEVICE_IDLE_MODE true"
+        ]
+    },
+    {
+        "action": "android.app.action.DEVICE_OWNER_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.DEVICE_OWNER_CHANGED"
+        ]
+    },
+    {
+        "action": "android.os.action.DISCHARGING",
+        "adb": [
+            "adb shell am broadcast -a android.os.action.DISCHARGING --ez android.os.extra.DISCHARGING true"
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.DISCOVERY_FINISHED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.DISCOVERY_FINISHED"
+        ]
+    },
+    {
+        "action": "android.bluetooth.adapter.action.DISCOVERY_STARTED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.adapter.action.DISCOVERY_STARTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.DOCK_EVENT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.DOCK_EVENT --ei android.intent.extra.DOCK_STATE 1"
+        ]
+    },
+    {
+        "action": "android.intent.action.DOWNLOAD_COMPLETE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.DOWNLOAD_COMPLETE --el android.intent.extra.DOWNLOAD_ID 123"
+        ]
+    },
+    {
+        "action": "android.intent.action.DREAMING_STARTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.DREAMING_STARTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.DREAMING_STOPPED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.DREAMING_STOPPED"
+        ]
+    },
+    {
+        "action": "android.intent.action.DROPBOX_ENTRY_ADDED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.DROPBOX_ENTRY_ADDED --es android.intent.extra.TAG \"example_tag\" --es android.intent.extra.PATH \"/data/dropbox/example_entry\""
+        ]
+    },
+    {
+        "action": "android.intent.action.EVENT_REMINDER",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.EVENT_REMINDER --ei android.intent.extra.EVENT_ID 123 --el android.intent.extra.EVENT_TIME 1680292800000"
+        ]
+    },
+    {
+        "action": "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE --es android.intent.extra.CHANGED_PACKAGE_LIST \"com.example.app1;com.example.app2\""
+        ]
+    },
+    {
+        "action": "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE --es android.intent.extra.CHANGED_PACKAGE_LIST \"com.example.app1;com.example.app2\""
+        ]
+    },
+    {
+        "action": "android.intent.action.EXTERNAL_PROVIDER_CHANGE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.EXTERNAL_PROVIDER_CHANGE --es android.intent.extra.PROVIDER_AUTHORITY \"com.example.provider\""
+        ]
+    },
+    {
+        "action": "android.intent.action.FETCH_VOICEMAIL",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.FETCH_VOICEMAIL"
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.FOUND",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.FOUND --es android.bluetooth.device.extra.DEVICE \"00:11:22:33:44:55\""
+        ]
+    },
+    {
+        "action": "android.intent.action.GET_LANGUAGE_DETAILS",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.GET_LANGUAGE_DETAILS"
+        ]
+    },
+    {
+        "action": "android.intent.action.GET_RESTRICTION_ENTRIES",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.GET_RESTRICTION_ENTRIES --es android.content.restrictions.intent.AUTHORITY \"com.example.restrictions\""
+        ]
+    },
+    {
+        "action": "android.intent.action.GTALK_SERVICE_CONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.GTALK_SERVICE_CONNECTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.GTALK_SERVICE_DISCONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.GTALK_SERVICE_DISCONNECTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.HDMI_AUDIO_PLUG",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.HDMI_AUDIO_PLUG --ez android.intent.extra.AUDIO_PLUG_STATE true"
+        ]
+    },
+    {
+        "action": "android.intent.action.HEADSET_PLUG",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.HEADSET_PLUG --ei android.intent.extra.STATE 1 --ei android.intent.extra.MICROPHONE 1"
+        ]
+    },
+    {
+        "action": "android.intent.action.INPUT_METHOD_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.INPUT_METHOD_CHANGED --es android.intent.extra.INPUT_METHOD_ID \"com.example.input/.SomeIME\""
+        ]
+    },
+    {
+        "action": "android.app.action.INTERRUPTION_FILTER_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.INTERRUPTION_FILTER_CHANGED --ei android.app.extra.INTERRUPTION_FILTER 3"
+        ]
+    },
+    {
+        "action": "android.intent.action.KEY_ACCESS_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.KEY_ACCESS_CHANGED"
+        ]
+    },
+    {
+        "action": "android.security.intent.action.KEYCHAIN_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.security.intent.action.KEYCHAIN_CHANGED"
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.LOCAL_NAME_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.LOCAL_NAME_CHANGED --es android.bluetooth.device.extra.LOCAL_NAME \"Example Device\""
+        ]
+    },
+    {
+        "action": "android.intent.action.LOCALE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.LOCALE_CHANGED"
+        ]
+    },
+    {
+        "action": "android.intent.action.LOCK_TASK_ENTERING",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.LOCK_TASK_ENTERING --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.LOCK_TASK_EXITING",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.LOCK_TASK_EXITING"
+        ]
+    },
+    {
+        "action": "android.intent.action.LOCKED_BOOT_COMPLETED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.LOCKED_BOOT_COMPLETED"
+        ]
+    },
+    {
+        "action": "android.intent.action.MANAGE_PACKAGE_STORAGE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MANAGE_PACKAGE_STORAGE --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MANAGED_PROFILE_ADDED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MANAGED_PROFILE_ADDED"
+        ]
+    },
+    {
+        "action": "android.intent.action.MANAGED_PROFILE_AVAILABLE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MANAGED_PROFILE_AVAILABLE"
+        ]
+    },
+    {
+        "action": "android.intent.action.MANAGED_PROFILE_PROVISIONED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MANAGED_PROFILE_PROVISIONED"
+        ]
+    },
+    {
+        "action": "android.intent.action.MANAGED_PROFILE_REMOVED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MANAGED_PROFILE_REMOVED"
+        ]
+    },
+    {
+        "action": "android.intent.action.MANAGED_PROFILE_UNAVAILABLE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MANAGED_PROFILE_UNAVAILABLE"
+        ]
+    },
+    {
+        "action": "android.intent.action.MANAGED_PROFILE_UNLOCKED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MANAGED_PROFILE_UNLOCKED"
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_BAD_REMOVAL",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_BAD_REMOVAL"
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_BUTTON",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_BUTTON --ei android.intent.extra.KEY_EVENT 85"
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_CHECKING",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_CHECKING --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_EJECT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_EJECT --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_MOUNTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_NOFS",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_NOFS --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_REMOVED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_REMOVED --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_SCANNER_FINISHED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_FINISHED --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_SCANNER_STARTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_STARTED --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_SHARED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_SHARED --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_UNMOUNTABLE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_UNMOUNTABLE --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MEDIA_UNMOUNTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MEDIA_UNMOUNTED --es android.intent.extra.PATH \"/storage/emulated/0\""
+        ]
+    },
+    {
+        "action": "android.intent.action.MICROPHONE_MUTE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MICROPHONE_MUTE_CHANGED --ez android.intent.extra.MICROPHONE_MUTE true"
+        ]
+    },
+    {
+        "action": "android.intent.action.MY_PACKAGE_REPLACED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MY_PACKAGE_REPLACED"
+        ]
+    },
+    {
+        "action": "android.intent.action.MY_PACKAGE_SUSPENDED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MY_PACKAGE_SUSPENDED"
+        ]
+    },
+    {
+        "action": "android.intent.action.MY_PACKAGE_UNSUSPENDED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.MY_PACKAGE_UNSUSPENDED"
+        ]
+    },
+    {
+        "action": "android.bluetooth.device.action.NAME_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.bluetooth.device.action.NAME_CHANGED --es android.bluetooth.device.extra.DEVICE \"00:11:22:33:44:55\" --es android.bluetooth.device.extra.NAME \"New Name\""
+        ]
+    },
+    {
+        "action": "android.intent.action.NETWORK_COUNTRY_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.NETWORK_COUNTRY_CHANGED --es android.intent.extra.NETWORK_COUNTRY_CODE \"US\""
+        ]
+    },
+    {
+        "action": "android.net.logprovider.NETWORK_LOGS_AVAILABLE",
+        "adb": [
+            "adb shell am broadcast -a android.net.logprovider.NETWORK_LOGS_AVAILABLE --es android.net.logprovider.NAMESPACE \"example_namespace\""
+        ]
+    },
+    {
+        "action": "android.hardware.action.NEW_PICTURE",
+        "adb": [
+            "adb shell am broadcast -a android.hardware.action.NEW_PICTURE --es android.hardware.action.NEW_PICTURE_FILE \"/path/to/picture.jpg\""
+        ]
+    },
+    {
+        "action": "android.hardware.action.NEW_VIDEO",
+        "adb": [
+            "adb shell am broadcast -a android.hardware.action.NEW_VIDEO --es android.hardware.action.NEW_VIDEO_FILE \"/path/to/video.mp4\""
+        ]
+    },
+    {
+        "action": "android.intent.action.NEW_VOICEMAIL",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.NEW_VOICEMAIL"
+        ]
+    },
+    {
+        "action": "android.intent.action.NEXT_ALARM_CLOCK_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.NEXT_ALARM_CLOCK_CHANGED --el android.intent.extra.ALARM_COUNT 1 --el android.intent.extra.NEXT_ALARM_FORMATTED_TIME 1680292800000"
+        ]
+    },
+    {
+        "action": "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED --es android.app.extra.NOTIFICATION_CHANNEL_ID \"example_channel\" --ez android.app.extra.BLOCKED true"
+        ]
+    },
+    {
+        "action": "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED --es android.app.extra.NOTIFICATION_CHANNEL_GROUP \"example_group\" --ez android.app.extra.BLOCKED true"
+        ]
+    },
+    {
+        "action": "android.intent.action.NOTIFICATION_CLICKED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.NOTIFICATION_CLICKED --es android.intent.extra.NOTIFICATION_ID \"123\" --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.app.action.NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED --ez android.app.extra.NOTIFICATION_POLICY_ACCESS_GRANTED true"
+        ]
+    },
+    {
+        "action": "android.app.action.NOTIFICATION_POLICY_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.app.action.NOTIFICATION_POLICY_CHANGED"
+        ]
+    },
+    {
+        "action": "android.intent.action.NOTIFY_CARRIER_SETUP_INCOMPLETE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.NOTIFY_CARRIER_SETUP_INCOMPLETE"
+        ]
+    },
+    {
+        "action": "android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION",
+        "adb": [
+            "adb shell am broadcast -a android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION --ei android.media.extra.AUDIO_SESSION 123"
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_ADDED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_ADDED --es android.intent.extra.PACKAGE_NAME \"com.example.app\" --ez android.intent.extra.REPLACING false"
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_CHANGED --es android.intent.extra.PACKAGE_NAME \"com.example.app\" --ez android.intent.extra.REPLACING false"
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_DATA_CLEARED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_DATA_CLEARED --es android.intent.extra.PACKAGE_NAME \"com.example.app\" --ei android.intent.extra.UID 10123"
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_FIRST_LAUNCH",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_FIRST_LAUNCH --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_FULLY_REMOVED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_FULLY_REMOVED --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_INSTALL",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_INSTALL --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_NEEDS_VERIFICATION",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_NEEDS_VERIFICATION --es android.intent.extra.PACKAGE_NAME \"com.example.app\" --ei android.intent.extra.UID 10123"
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_REMOVED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_REMOVED --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_REPLACED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_REPLACED --es android.intent.extra.PACKAGE_NAME \"com.example.app\" --ez android.intent.extra.REPLACING true"
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_RESTARTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_RESTARTED --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PACKAGE_VERIFIED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PACKAGE_VERIFIED --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PASTE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PASTE"
+        ]
+    },
+    {
+        "action": "android.intent.action.PICK",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PICK --es android.intent.extra.INTENT \"intent://example.com\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PICK_EMERGENCY_CONTACT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PICK_EMERGENCY_CONTACT"
+        ]
+    },
+    {
+        "action": "android.intent.action.PICK_PHONE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PICK_PHONE"
+        ]
+    },
+    {
+        "action": "android.intent.action.PICK_PRINTJOB",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PICK_PRINTJOB"
+        ]
+    },
+    {
+        "action": "android.intent.action.PICK_SUBSCRIPTION",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PICK_SUBSCRIPTION"
+        ]
+    },
+    {
+        "action": "android.intent.action.POWER_CONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.POWER_CONNECTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.POWER_DISCONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.POWER_DISCONNECTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.POWER_USAGE_SUMMARY",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.POWER_USAGE_SUMMARY"
+        ]
+    },
+    {
+        "action": "android.intent.action.PRE_BOOT_COMPLETED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PRE_BOOT_COMPLETED"
+        ]
+    },
+    {
+        "action": "android.intent.action.PRELOAD_COMPLETED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PRELOAD_COMPLETED"
+        ]
+    },
+    {
+        "action": "android.intent.action.PREMIUM_SMS_ACCESS_GRANTED_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PREMIUM_SMS_ACCESS_GRANTED_CHANGED --ez android.intent.extra.PREMIUM_SMS_ACCESS_GRANTED true"
+        ]
+    },
+    {
+        "action": "android.intent.action.PROCESS_TEXT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PROCESS_TEXT --es android.intent.extra.PROCESS_TEXT \"Example text\" --es android.intent.extra.PROCESS_TEXT_EXTRAS_BUNDLE_KEY \"example_key\" --es android.intent.extra.PROCESS_TEXT_EXTRAS_BUNDLE_VALUE \"example_value\""
+        ]
+    },
+    {
+        "action": "android.intent.action.PROVIDER_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PROVIDER_CHANGED --es android.intent.extra.PROVIDER_CHANGED \"com.example.provider\""
+        ]
+    },
+    {
+        "action": "android.intent.action.QUICK_CLOCK",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.QUICK_CLOCK"
+        ]
+    },
+    {
+        "action": "android.intent.action.REBOOT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.REBOOT"
+        ]
+    },
+    {
+        "action": "android.intent.action.REBOOT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.REBOOT --es android.intent.extra.KEY_CONFIRM true"
+        ]
+    },
+    {
+        "action": "android.intent.action.REMOTE_INTENT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.REMOTE_INTENT --es android.intent.extra.REMOTE_INTENT_TOKEN \"example_token\" --es android.intent.extra.REMOTE_INTENT_EXTRAS_BUNDLE_KEY \"example_key\" --es android.intent.extra.REMOTE_INTENT_EXTRAS_BUNDLE_VALUE \"example_value\""
+        ]
+    },
+    {
+        "action": "android.intent.action.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.RESTORE_FINISHED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.RESTORE_FINISHED"
+        ]
+    },
+    {
+        "action": "android.intent.action.RESTORE_STARTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.RESTORE_STARTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.RUN",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.RUN --es android.intent.extra.DATA \"example://run\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SCREEN_OFF",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SCREEN_OFF"
+        ]
+    },
+    {
+        "action": "android.intent.action.SCREEN_ON",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SCREEN_ON"
+        ]
+    },
+    {
+        "action": "android.intent.action.SEARCH_LONG_PRESS",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SEARCH_LONG_PRESS"
+        ]
+    },
+    {
+        "action": "android.intent.action.SEND",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SEND --es android.intent.extra.TEXT \"Example text\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SENDTO",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SENDTO --es android.intent.extra.TEXT \"Example text\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SEND_MULTIPLE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SEND_MULTIPLE --es android.intent.extra.STREAM \"content://example.com/path/to/file.txt\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SESSION_COMMITTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SESSION_COMMITTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.SET_ALARM",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SET_ALARM --el android.intent.extra.ALARM_MILLS 1680292800000"
+        ]
+    },
+    {
+        "action": "android.intent.action.SET_CLIPBOARD",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SET_CLIPBOARD --es android.intent.extra.TEXT \"Example text\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SET_INPUT_METHOD",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SET_INPUT_METHOD --es android.intent.extra.INPUT_METHOD_ID \"com.example.input/.SomeIME\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SET_WALLPAPER",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SET_WALLPAPER --es android.intent.extra.DATA \"content://example.com/path/to/wallpaper.jpg\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SHUTDOWN",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SHUTDOWN"
+        ]
+    },
+    {
+        "action": "android.intent.action.SKIP_AD",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SKIP_AD"
+        ]
+    },
+    {
+        "action": "android.intent.action.SNAPSHOT_COMPLETE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SNAPSHOT_COMPLETE --es android.intent.extra.SNAPSHOT_URI \"content://example.com/path/to/snapshot.zip\""
+        ]
+    },
+    {
+        "action": "android.intent.action.SOFTWARE_UPDATE_AUTO_INSTALL",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SOFTWARE_UPDATE_AUTO_INSTALL"
+        ]
+    },
+    {
+        "action": "android.intent.action.SYNC",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SYNC"
+        ]
+    },
+    {
+        "action": "android.intent.action.SYSTEM_TUTORIAL",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.SYSTEM_TUTORIAL"
+        ]
+    },
+    {
+        "action": "android.intent.action.TIMEZONE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.TIMEZONE_CHANGED --ez android.intent.extra.TIMEZONE \"America/New_York\" --el android.intent.extra.TIME_PREF 1680292800000"
+        ]
+    },
+    {
+        "action": "android.intent.action.TIME_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.TIME_CHANGED --el android.intent.extra.TIME 1680292800000"
+        ]
+    },
+    {
+        "action": "android.intent.action.TIME_TICK",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.TIME_TICK"
+        ]
+    },
+    {
+        "action": "android.intent.action.UID_REMOVED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.UID_REMOVED --ei android.intent.extra.UID 10123"
+        ]
+    },
+    {
+        "action": "android.intent.action.UMS_CONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.UMS_CONNECTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.UMS_DISCONNECTED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.UMS_DISCONNECTED"
+        ]
+    },
+    {
+        "action": "android.intent.action.UNINSTALL_PACKAGE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.UNINSTALL_PACKAGE --es android.intent.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.intent.action.USER_BACKGROUND",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.USER_BACKGROUND --ei android.intent.extra.USER_HANDLE 10"
+        ]
+    },
+    {
+        "action": "android.intent.action.USER_FOREGROUND",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.USER_FOREGROUND --ei android.intent.extra.USER_HANDLE 10"
+        ]
+    },
+    {
+        "action": "android.intent.action.USER_INITIALIZE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.USER_INITIALIZE --ei android.intent.extra.USER_HANDLE 10"
+        ]
+    },
+    {
+        "action": "android.intent.action.USER_PRESENT",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.USER_PRESENT"
+        ]
+    },
+    {
+        "action": "android.intent.action.USER_UNLOCKED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.USER_UNLOCKED"
+        ]
+    },
+    {
+        "action": "android.intent.action.VIEW",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.VIEW --es android.intent.extra.VIEW_URI \"https://example.com\""
+        ]
+    },
+    {
+        "action": "android.intent.action.VOICE_ASSIST",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.VOICE_ASSIST"
+        ]
+    },
+    {
+        "action": "android.intent.action.VOICE_COMMAND",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.VOICE_COMMAND"
+        ]
+    },
+    {
+        "action": "android.intent.action.VOICE_SEARCH_HANDS_FREE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.VOICE_SEARCH_HANDS_FREE"
+        ]
+    },
+    {
+        "action": "android.intent.action.WALLPAPER_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.WALLPAPER_CHANGED"
+        ]
+    },
+    {
+        "action": "android.intent.action.WEB_SEARCH",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.WEB_SEARCH --es android.intent.extra.QUERY \"example query\""
+        ]
+    },
+    {
+        "action": "android.hardware.display.action.WIFI_DISPLAY_STATUS_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.hardware.display.action.WIFI_DISPLAY_STATUS_CHANGED --ez android.hardware.display.extra.WIFI_DISPLAY_STATUS 1"
+        ]
+    },
+    {
+        "action": "android.net.wifi.action.WIFI_NETWORK_SUGGESTION_POST_CONNECTION",
+        "adb": [
+            "adb shell am broadcast -a android.net.wifi.action.WIFI_NETWORK_SUGGESTION_POST_CONNECTION --es android.net.wifi.extra.PACKAGE_NAME \"com.example.app\""
+        ]
+    },
+    {
+        "action": "android.net.wifi.SCAN_AVAILABLE",
+        "adb": [
+            "adb shell am broadcast -a android.net.wifi.SCAN_AVAILABLE --ez android.net.wifi.extra.SCAN_AVAILABLE true"
+        ]
+    },
+    {
+        "action": "android.net.wifi.STATE_CHANGE",
+        "adb": [
+            "adb shell am broadcast -a android.net.wifi.STATE_CHANGE --ei android.net.wifi.extra.WIFI_STATE 3"
+        ]
+    },
+    {
+        "action": "android.net.wimax.NETWORK_STATE_CHANGED",
+        "adb": [
+            "adb shell am broadcast -a android.net.wimax.NETWORK_STATE_CHANGED --ez android.net.wimax.extra.NETWORK_STATE 1"
+        ]
+    },
+    {
+        "action": "android.intent.action.PROXY_CHANGE",
+        "adb": [
+            "adb shell am broadcast -a android.intent.action.PROXY_CHANGE"
+        ]
+    }
+]

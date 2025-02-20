@@ -1,0 +1,6 @@
+openai==1.24.0
+opencv_python==4.9.0.80
+prompt==0.4.1
+pyshine==0.0.9
+#pipssdeep==3.4
+xmltodict==0.13.0

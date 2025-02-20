@@ -1,0 +1,35 @@
+Given the screenshot of an app with interactive UI elements labeled with numbers, provide an analysis and interaction strategy using the following functions to interact with the app:
+
+1. tap(element: int): Taps the specified UI element by its numeric label.
+2. long_press(element: int): Long presses the specified UI element by its numeric label.
+3. swipe(element: int, direction: str, dist: str): Swipes on the specified UI element in the given direction (up, down, left, right) for a given distance (short, medium, long).
+4. input(element: int, text_input: str): Inputs text into the specified text box by its numeric label.
+5. tap(BACK): Performs the BACK action.
+6. tap(ENTER): Performs the ENTER action.
+7. scroll(UP): Scrolls up the screen.
+8. scroll(DOWN): Scrolls down the screen.
+
+The response should be structured as follows each on a single line:
+
+Observation: <Describe the app's interface, noting any clickable links, text fields, or other interactive elements, along with their respective labels.>
+Thought: <Identify the primary action to take within the app based on the labeled elements.>
+Steps: <Outline a sequence of interactions using the provided functions, such as tapping, inputting text, or scrolling. You cannot output anything else except a function call in this field. Example output: Steps: [tap(5); input(5, "Buy groceries"); tap(3);]>
+Summary: <Summarize the interaction performed.>
+
+The labels in this screenshot are [<labels>].
+
+Your past actions to proceed with this task are summarized as follows: You did not perform other action before.
+Now, given the following labeled screenshot, you need to think and call the function needed to proceed with the task. 
+If there are multiple text input boxes, provide an input for each of them in your response by calling the input() function multiple times.
+Make sure the action is performed on the right label.
+Make sure you include action for all the labelled items.
+
+---
+
+For example, if the screenshot is of a to-do list app, the response might look like this:
+
+Observation: The screen shows a list of tasks with checkboxes beside them. There is an 'Add Task' button labeled 3 and a text input field for the new task labeled 5.
+Thought: To add a new task, I should first tap the text input field labeled 5, enter the task, and then tap the 'Add Task' button labeled 3.
+Steps: [tap(5); input(5, "Buy groceries"); tap(3);]
+Summary: I entered "Buy groceries" into the text input field and tapped the 'Add Task' button to add it to the list.
+
