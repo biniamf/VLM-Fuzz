@@ -18,3 +18,5 @@ python main.py [-h] -a APK [-p PORT] [-b BUDGET]
 -p emulator port if not default
 -b budget in minutes, default is 60 mins
 
+<img src="net.everythingandroid.timer_test2.png" alt="transition example">
+
