@@ -10,7 +10,7 @@ export OPENAI_API_KEY=you-key
 
 ----
 
-# Custom emulator port (multi emulator setting)
+# Custom emulator/device port (multi emulator/device setting)
 
 If you need to use custom emulator ports in multi emulator setting or custom budget, make sure to install the apk on the right emulator and run the following script specifying the right port and budget
 
