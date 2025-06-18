@@ -23,9 +23,11 @@ python main.py [-h] -a APK [-p PORT] [-b BUDGET]
 
 <img src="net.everythingandroid.timer_test2.png" alt="transition example">
 
+<pre>
 @article{demissie2025vlm,
   title={VLM-Fuzz: Vision Language Model Assisted Recursive Depth-first Search Exploration for Effective UI Testing of Android Apps},
   author={Demissie, Biniam Fisseha and Tun, Yan Naing and Shar, Lwin Khin and Ceccato, Mariano},
   journal={arXiv preprint arXiv:2504.11675},
   year={2025}
 }
+</pre>
