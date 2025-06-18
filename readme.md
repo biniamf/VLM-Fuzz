@@ -1,3 +1,4 @@
+[![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)]([https://arxiv.org/abs/1234.56789](https://arxiv.org/abs/2504.11675))
 
 # How to run
 
@@ -23,11 +24,16 @@ python main.py [-h] -a APK [-p PORT] [-b BUDGET]
 
 <img src="net.everythingandroid.timer_test2.png" alt="transition example">
 
-<pre>
-@article{demissie2025vlm,
-  title={VLM-Fuzz: Vision Language Model Assisted Recursive Depth-first Search Exploration for Effective UI Testing of Android Apps},
-  author={Demissie, Biniam Fisseha and Tun, Yan Naing and Shar, Lwin Khin and Ceccato, Mariano},
-  journal={arXiv preprint arXiv:2504.11675},
-  year={2025}
+```bibtex
+@misc{demissie2025vlmfuzzvisionlanguagemodel,
+      title={VLM-Fuzz: Vision Language Model Assisted Recursive Depth-first Search Exploration for Effective UI Testing of Android Apps}, 
+      author={Biniam Fisseha Demissie and Yan Naing Tun and Lwin Khin Shar and Mariano Ceccato},
+      year={2025},
+      eprint={2504.11675},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2504.11675}, 
 }
-</pre>
+```
+
+
