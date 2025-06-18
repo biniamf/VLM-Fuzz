@@ -1,4 +1,5 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2504.11675-b31b1b.svg)](https://arxiv.org/abs/2504.11675)
+[![arXiv](https://img.shields.io/badge/arXiv-2504.11675-b31b1b.svg)](https://arxiv.org/abs/2504.11675) 
+## VLM-Fuzz: Vision Language Model Assisted Recursive Depth-first Search Exploration for Effective UI Testing of Android Apps
 
 # How to run
 
