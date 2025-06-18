@@ -1,4 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2504.11675)
+[![arXiv](https://img.shields.io/badge/arXiv-2504.11675-b31b1b.svg)](https://arxiv.org/abs/2504.11675)
 
 # How to run
 
